@@ -1,0 +1,5 @@
+-> user model , todos model
+-> implement jwt auth
+-> frontend implement local storage , cookies , sessions
+-> login feature -> display todos in the frontend
+-> add display todos for a particular user
