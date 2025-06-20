@@ -4,6 +4,8 @@ import jwt from "jsonwebtoken"
 // here auth header and cookie are headers set in a http 
 // auth header - auth {Bearer_token}  -> primarily used for (stateless)
 // cookie header - set-cookie header ->  primarily used for session management (statefull)
+// in the FE jwt token is sent manually in headers , but session, cookies can be sent automatically using credential:true in fetch api
+// also configure the cors to credentials:true
 
 //using auth headers 
 export const verfiyToken = async (req: Request, res: Response, next: NextFunction) => {
