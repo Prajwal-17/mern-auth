@@ -1,6 +1,10 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken"
 
+// here auth header and cookie are headers set in a http 
+// auth header - auth {Bearer_token}  -> primarily used for (stateless)
+// cookie header - set-cookie header ->  primarily used for session management (statefull)
+
 //using auth headers 
 export const verfiyToken = async (req: Request, res: Response, next: NextFunction) => {
 
